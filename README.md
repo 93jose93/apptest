@@ -25,3 +25,7 @@ Modulos desarrollados:
 4 Ui/Ux
 
 [![app1.png](https://i.postimg.cc/fWPDNrMF/app1.png)](https://postimg.cc/nMq6KTjY)
+
+[![app2.png](https://i.postimg.cc/C5rjPVDw/app2.png)](https://postimg.cc/T5mL1FCs)
+
+[![app3.png](https://i.postimg.cc/KY53p2SC/app3.png)](https://postimg.cc/1gfz4bzK)
