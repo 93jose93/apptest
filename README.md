@@ -18,9 +18,10 @@ librerías usados
 
 Conexion a una api pública https://randomuser.me/api/?results=50
 
-Modulos desarrollados
+Modulos desarrollados:
 1 Lista de usuarios
 2 detalles de usarios
 3 conexion erronea a la api
 4 Ui/Ux
 
+[![app1.png](https://i.postimg.cc/fWPDNrMF/app1.png)](https://postimg.cc/nMq6KTjY)
