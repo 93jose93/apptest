@@ -2,15 +2,25 @@
 
 A new Flutter project.
 
-## Getting Started
+Configuración con flutter 
 
-This project is a starting point for a Flutter application.
+Flutter 3.10.5 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision 796c8ef792 (2 weeks ago) • 2023-06-13 15:51:02 -0700
+Engine • revision 45f6e00911
+Tools • Dart 3.0.5 • DevTools 2.23.1
 
-A few resources to get you started if this is your first Flutter project:
+librerías usados 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+##Manejador de estado provider permite no solo exponer un valor, sino también crearlo, escucharlo y disponer de él.
+  provider: ^6.0.5
+##Una biblioteca componible basada en el futuro para realizar solicitudes HTTP.
+  http: ^1.1.0
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Conexion a una api pública https://randomuser.me/api/?results=50
+
+Modulos desarrollados
+1 Lista de usuarios
+2 detalles de usarios
+3 conexion erronea a la api
+4 Ui/Ux
+
