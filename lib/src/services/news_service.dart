@@ -10,17 +10,26 @@ class NewsService with ChangeNotifier {
     // print('Inicializar servicios....');
     getUserslines();
   }
+  
+  Future<String> _getJsonData(String endpoint, [int page = 1]) async {
+    var url = Uri.https(
+      'randomuser.me',
+      endpoint,
+      {
+        'results': '50',
+        'page': '$page'
+      },
+    );
+
+    final response = await http.get(url);
+    return response.body;
+  }
 
   getUserslines() async {
     // print('Cargando servicios....');
-    final url = Uri.https(
-      'randomuser.me',
-      '/api/',
-      {'results': '50'},
-    );
-    final response = await http.get(url);
+    final jsonData = await _getJsonData('/api/');
 
-    final newsResponse = newsMoldesFromJson(response.body);
+    final newsResponse = newsMoldesFromJson(jsonData);
     // print(newsResponse.results[0].email);
 
     userlines = newsResponse.results;

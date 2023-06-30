@@ -54,8 +54,7 @@ class _CustomAppBar extends StatelessWidget {
             style: TextStyle(fontSize: 16),
           ),
         ),
-        background: const FadeInImage(
-          placeholder: AssetImage('assets/logo.png'),
+        background: const Image(
           image: AssetImage('assets/logo.png'),
           fit: BoxFit.cover,
         ),
@@ -80,12 +79,15 @@ class _PosterTitle extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Row(
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(100),
-            child: FadeInImage(
-              placeholder: AssetImage('assets/no-image.jpg'),
-              image: NetworkImage(result.picture!.large.toString()),
-              height: 100,
+          Hero(
+            tag: result.id!,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(100),
+              child: FadeInImage(
+                placeholder: AssetImage('assets/no-image.jpg'),
+                image: NetworkImage(result.picture!.large.toString()),
+                height: 100,
+              ),
             ),
           ),
           const SizedBox(width: 20),

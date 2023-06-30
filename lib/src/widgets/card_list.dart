@@ -22,8 +22,7 @@ class CardList extends StatelessWidget {
           if (results.length == 0) {
             // Si los resultados están vacíos, muestra un mensaje de error
             return const Center(
-              child: FadeInImage(
-                placeholder: AssetImage('assets/internet-no-connection.png'),
+              child: Image(
                 image: AssetImage('assets/internet-no-connection.png'),
                 fit: BoxFit.cover,
               ),
@@ -63,10 +62,9 @@ class _Card extends StatelessWidget {
             margin: const EdgeInsets.symmetric(),
             child: Row(
               children: [
-                // Hero(
-                //   tag: 1,
-                //   child:
-                ClipRRect(
+                Hero(
+                  tag: result.id!,
+                  child: ClipRRect(
                     borderRadius: BorderRadius.circular(100),
                     child: FadeInImage(
                       placeholder: const AssetImage('assets/no-image.jpg'),
@@ -74,16 +72,17 @@ class _Card extends StatelessWidget {
                       width: 70,
                       height: 70,
                       fit: BoxFit.cover,
-                    )),
-                // ),
+                    ),
+                  ),
+                ),
                 Container(
                   //height: 180,
                   width: 200,
-                  margin: const EdgeInsets.symmetric(horizontal: 30),
+                  margin: const EdgeInsets.symmetric(horizontal: 10),
 
-                  // color: Colors.red,
+                  //  color: Colors.red,
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "${result.name!.title.toString()} ${result.name!.first.toString()} ${result.name!.last.toString()}",
